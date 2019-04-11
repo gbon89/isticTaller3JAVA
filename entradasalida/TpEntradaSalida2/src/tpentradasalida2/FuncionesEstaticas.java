@@ -41,7 +41,7 @@ public class FuncionesEstaticas {
     }
     public static double promedio(int nu, int me, int ro){
       double pro;
-      pro = nu + me + ro /3;
+      pro = (nu + me + ro) / 3;
         System.out.println(pro);
         return (double) pro;
     
