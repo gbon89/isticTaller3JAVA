@@ -23,7 +23,7 @@ public class frmTaquilla extends javax.swing.JFrame {
         
          objSalaSecundaria.setCapacidad(250);
          objSalaSecundaria.setPrecioEntrada(180.0);//esto equivale a asignar los valores a través de de los metodos set
-      
+         libres1.setText("LIBRES " + objSalaCentral.getCapacidad());
     }
 
     /**
@@ -44,6 +44,8 @@ public class frmTaquilla extends javax.swing.JFrame {
         lblPorcCentral = new javax.swing.JLabel();
         lblTotalCentral = new javax.swing.JLabel();
         lblEspectadores = new javax.swing.JLabel();
+        anular1 = new javax.swing.JButton();
+        libres1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         Textsala2 = new javax.swing.JTextField();
@@ -52,6 +54,7 @@ public class frmTaquilla extends javax.swing.JFrame {
         lblPorcSala2 = new javax.swing.JLabel();
         lblEspectadores2 = new javax.swing.JLabel();
         lblTotalSala2 = new javax.swing.JLabel();
+        anular2 = new javax.swing.JButton();
 
         jLabel3.setText("jLabel3");
 
@@ -87,6 +90,15 @@ public class frmTaquilla extends javax.swing.JFrame {
         lblEspectadores.setForeground(new java.awt.Color(204, 0, 0));
         lblEspectadores.setText("Espectadores: 0");
 
+        anular1.setText("Anular");
+        anular1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                anular1ActionPerformed(evt);
+            }
+        });
+
+        libres1.setText("libres: 0");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -99,17 +111,25 @@ public class frmTaquilla extends javax.swing.JFrame {
                     .addComponent(txtPeliculaCentral, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(lblPorcCentral)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addComponent(lblPorcCentral)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                    .addComponent(btnEntradaCentral)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(btnVaciarCentral)
+                                    .addGap(50, 50, 50)))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(btnEntradaCentral)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnVaciarCentral)
-                                .addGap(50, 50, 50)))
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(anular1)
+                                .addGap(125, 125, 125)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(lblEspectadores)
-                            .addComponent(lblTotalCentral))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(libres1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lblTotalCentral))
+                                .addGap(14, 14, 14)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -125,10 +145,14 @@ public class frmTaquilla extends javax.swing.JFrame {
                     .addComponent(btnVaciarCentral)
                     .addComponent(lblEspectadores))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblPorcCentral)
-                    .addComponent(lblTotalCentral))
-                .addContainerGap(16, Short.MAX_VALUE))
+                    .addComponent(libres1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(anular1)
+                    .addComponent(lblTotalCentral, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 0)), "SALA SECUNDARIA"));
@@ -161,6 +185,13 @@ public class frmTaquilla extends javax.swing.JFrame {
         lblTotalSala2.setForeground(new java.awt.Color(153, 0, 51));
         lblTotalSala2.setText("Total $: 0,00");
 
+        anular2.setText("anular");
+        anular2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                anular2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -175,8 +206,13 @@ public class frmTaquilla extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(47, 47, 47)
                         .addComponent(lblPorcSala2)
-                        .addGap(156, 156, 156)
-                        .addComponent(lblTotalSala2)))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(156, 156, 156)
+                                .addComponent(lblTotalSala2))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(anular2)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(56, 56, 56)
@@ -202,13 +238,15 @@ public class frmTaquilla extends javax.swing.JFrame {
                         .addComponent(lblEspectadores2)))
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblPorcSala2)
-                        .addContainerGap())
-                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblTotalSala2)
-                        .addContainerGap(22, Short.MAX_VALUE))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(anular2)
+                            .addComponent(lblPorcSala2))
+                        .addContainerGap())))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -219,7 +257,7 @@ public class frmTaquilla extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -229,7 +267,7 @@ public class frmTaquilla extends javax.swing.JFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(49, Short.MAX_VALUE))
         );
 
         pack();
@@ -242,6 +280,7 @@ public class frmTaquilla extends javax.swing.JFrame {
         lblEspectadores.setText("Espectadores: " + objSalaCentral.getAsientosOcupados());
         lblPorcCentral.setText("Ocupación del " + objSalaCentral.getPorcOcupacion() + "%");
         lblTotalCentral.setText("Total $:" + objSalaCentral.getTotaldeIngresos());
+        libres1.setText("LIBRES " + (objSalaCentral.getCapacidad() - objSalaCentral.getAsientosOcupados()));
         //lblTotalCentral.setText("Total $: ");
     }//GEN-LAST:event_btnEntradaCentralActionPerformed
 
@@ -260,6 +299,7 @@ public class frmTaquilla extends javax.swing.JFrame {
         lblEspectadores.setText("Espectadores: " + objSalaCentral.getAsientosOcupados());
         lblPorcCentral.setText("Ocupación del " + objSalaCentral.getPorcOcupacion() + "%");
         lblTotalCentral.setText("Total $:" + objSalaCentral.getTotaldeIngresos());
+        
     }//GEN-LAST:event_btnVaciarCentralActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -270,6 +310,23 @@ public class frmTaquilla extends javax.swing.JFrame {
         lblPorcSala2.setText("Ocupación del " + objSalaSecundaria.getPorcOcupacion() + "%");
         lblTotalSala2.setText("Total $:" + objSalaSecundaria.getTotaldeIngresos());
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void anular1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_anular1ActionPerformed
+        // TODO add your handling code here:
+        objSalaCentral.ingresarEspectador(-1);
+        lblEspectadores.setText("Espectadores: " + objSalaCentral.getAsientosOcupados());
+        lblPorcCentral.setText("Ocupación del " + objSalaCentral.getPorcOcupacion() + "%");
+        lblTotalCentral.setText("Total $:" + objSalaCentral.getTotaldeIngresos());
+        //lblTotalCentral.setText("Total $: ");
+    }//GEN-LAST:event_anular1ActionPerformed
+
+    private void anular2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_anular2ActionPerformed
+        // TODO add your handling code here:
+        objSalaSecundaria.ingresarEspectador(-1);
+        lblEspectadores2.setText("Espectadores: " + objSalaSecundaria.getAsientosOcupados());
+        lblPorcSala2.setText("Ocupación del " + objSalaSecundaria.getPorcOcupacion() + "%");
+        lblTotalSala2.setText("Total $:" + objSalaSecundaria.getTotaldeIngresos());
+    }//GEN-LAST:event_anular2ActionPerformed
     
     
     /**
@@ -309,6 +366,8 @@ public class frmTaquilla extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Textsala2;
+    private javax.swing.JButton anular1;
+    private javax.swing.JButton anular2;
     private javax.swing.JButton btnEntradaCentral;
     private javax.swing.JButton btnVaciarCentral;
     private javax.swing.JButton jButton1;
@@ -324,6 +383,7 @@ public class frmTaquilla extends javax.swing.JFrame {
     private javax.swing.JLabel lblPorcSala2;
     private javax.swing.JLabel lblTotalCentral;
     private javax.swing.JLabel lblTotalSala2;
+    private javax.swing.JLabel libres1;
     private javax.swing.JTextField txtPeliculaCentral;
     // End of variables declaration//GEN-END:variables
 }
