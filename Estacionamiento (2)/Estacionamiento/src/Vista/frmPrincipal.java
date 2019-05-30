@@ -1,5 +1,6 @@
 package Vista;
 
+import java.awt.Color;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -13,6 +14,12 @@ public class frmPrincipal extends javax.swing.JFrame {
     {
         initComponents();
         this.setExtendedState(MAXIMIZED_BOTH);
+        btnNose.setBackground(new Color(22, 160, 133  ));
+        btnIngreso.setBackground(new Color(22, 160, 133    ));
+        btnSalida.setBackground(new Color(22, 160, 133  ));
+        btnReporte.setBackground(new Color(22, 160, 133  ));
+        jPanel1.setBackground(new Color(19, 141, 117  ));
+        jMenuBar1.setBackground(new Color(19, 141, 117  ));
     }
 
     /**
@@ -24,11 +31,12 @@ public class frmPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnIngreso = new javax.swing.JButton();
-        btnSalida = new javax.swing.JButton();
-        btnNose = new javax.swing.JButton();
-        btnReporte = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        btnReporte = new javax.swing.JButton();
+        btnIngreso = new javax.swing.JButton();
+        btnNose = new javax.swing.JButton();
+        btnSalida = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         btnMenu = new javax.swing.JMenu();
@@ -42,63 +50,104 @@ public class frmPrincipal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        btnIngreso.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        btnIngreso.setForeground(new java.awt.Color(0, 102, 204));
-        btnIngreso.setText("IN");
-        btnIngreso.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnIngresoActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnIngreso);
-        btnIngreso.setBounds(210, 110, 70, 50);
+        jLabel2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("          estación de servivio");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(10, 170, 200, 31);
 
-        btnSalida.setBackground(new java.awt.Color(255, 255, 255));
-        btnSalida.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        btnSalida.setForeground(new java.awt.Color(0, 102, 204));
-        btnSalida.setText("Out");
-        btnSalida.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
-        btnSalida.setBorderPainted(false);
-        btnSalida.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnSalida.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSalidaActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnSalida);
-        btnSalida.setBounds(110, 110, 70, 50);
+        jPanel1.setBackground(new java.awt.Color(51, 102, 0));
+        jPanel1.setForeground(new java.awt.Color(0, 102, 0));
 
-        btnNose.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        btnNose.setForeground(new java.awt.Color(0, 102, 153));
-        btnNose.setText("Nose");
-        btnNose.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnNoseActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnNose);
-        btnNose.setBounds(210, 180, 70, 60);
-
-        btnReporte.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        btnReporte.setForeground(new java.awt.Color(0, 102, 153));
+        btnReporte.setBackground(new java.awt.Color(51, 153, 0));
+        btnReporte.setFont(new java.awt.Font("Century Gothic", 1, 10)); // NOI18N
+        btnReporte.setForeground(new java.awt.Color(255, 255, 255));
         btnReporte.setText("Reporte");
+        btnReporte.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnReporteMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnReporteMouseExited(evt);
+            }
+        });
         btnReporte.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnReporteActionPerformed(evt);
             }
         });
-        getContentPane().add(btnReporte);
-        btnReporte.setBounds(110, 180, 79, 60);
+        jPanel1.add(btnReporte);
 
-        jLabel2.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 102, 153));
-        jLabel2.setText("          estación de servivio");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(-20, 190, 370, 31);
+        btnIngreso.setBackground(new java.awt.Color(51, 153, 0));
+        btnIngreso.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnIngreso.setForeground(new java.awt.Color(255, 255, 255));
+        btnIngreso.setText("IN");
+        btnIngreso.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnIngreso.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnIngresoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnIngresoMouseExited(evt);
+            }
+        });
+        btnIngreso.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIngresoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnIngreso);
+
+        btnNose.setBackground(new java.awt.Color(51, 153, 0));
+        btnNose.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnNose.setForeground(new java.awt.Color(255, 255, 255));
+        btnNose.setText("Nose");
+        btnNose.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnNoseMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnNoseMouseExited(evt);
+            }
+        });
+        btnNose.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNoseActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnNose);
+
+        btnSalida.setBackground(new java.awt.Color(51, 153, 0));
+        btnSalida.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnSalida.setForeground(new java.awt.Color(255, 255, 255));
+        btnSalida.setText("Out");
+        btnSalida.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+        btnSalida.setBorderPainted(false);
+        btnSalida.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSalida.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnSalidaMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnSalidaMouseExited(evt);
+            }
+        });
+        btnSalida.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalidaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnSalida);
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(230, 0, 300, 230);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/istic.jpg"))); // NOI18N
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(60, 5, 220, 230);
+        jLabel3.setBounds(0, 0, 225, 225);
+
+        jMenuBar1.setBorder(new javax.swing.border.MatteBorder(null));
+        jMenuBar1.setForeground(new java.awt.Color(255, 51, 51));
 
         btnMenu.setForeground(new java.awt.Color(0, 102, 153));
         btnMenu.setText("Vehiculos");
@@ -127,13 +176,16 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         jMenuBar1.add(btnMenu);
 
+        btnInformes.setBackground(new java.awt.Color(255, 255, 255));
         btnInformes.setForeground(new java.awt.Color(0, 102, 153));
         btnInformes.setText("Informes");
         jMenuBar1.add(btnInformes);
 
+        btnListado.setBackground(new java.awt.Color(255, 255, 255));
         btnListado.setForeground(new java.awt.Color(0, 102, 153));
         btnListado.setText("Listado");
 
+        btnmenuEstacionados.setBackground(new java.awt.Color(255, 255, 255));
         btnmenuEstacionados.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         btnmenuEstacionados.setForeground(new java.awt.Color(0, 102, 153));
         btnmenuEstacionados.setText("Estacionados");
@@ -209,6 +261,48 @@ public class frmPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnReporteActionPerformed
 
+    private void btnNoseMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNoseMouseEntered
+        // TODO add your handling code here:
+        btnNose.setBackground(new Color(46, 204, 113  ));
+        
+    }//GEN-LAST:event_btnNoseMouseEntered
+
+    private void btnNoseMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnNoseMouseExited
+        // TODO add your handling code here:
+        btnNose.setBackground(new Color(22, 160, 133  ));
+        
+    }//GEN-LAST:event_btnNoseMouseExited
+
+    private void btnReporteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReporteMouseEntered
+        // TODO add your handling code here:
+        btnReporte.setBackground(new Color(46, 204, 113 ));
+    }//GEN-LAST:event_btnReporteMouseEntered
+
+    private void btnReporteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReporteMouseExited
+        // TODO add your handling code here:
+         btnReporte.setBackground(new Color(22, 160, 133  ));
+    }//GEN-LAST:event_btnReporteMouseExited
+
+    private void btnIngresoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnIngresoMouseEntered
+        // TODO add your handling code here:
+        btnIngreso.setBackground(new Color(46, 204, 113    ));
+    }//GEN-LAST:event_btnIngresoMouseEntered
+
+    private void btnIngresoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnIngresoMouseExited
+        // TODO add your handling code here:
+        btnIngreso.setBackground(new Color(22, 160, 133    ));
+    }//GEN-LAST:event_btnIngresoMouseExited
+
+    private void btnSalidaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalidaMouseEntered
+        // TODO add your handling code here:
+        btnSalida.setBackground(new Color(46, 204, 113 ));
+    }//GEN-LAST:event_btnSalidaMouseEntered
+
+    private void btnSalidaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalidaMouseExited
+        // TODO add your handling code here:
+         btnSalida.setBackground(new Color(22, 160, 133  ));
+    }//GEN-LAST:event_btnSalidaMouseExited
+
     /**
      * @param args the command line arguments
      */
@@ -259,5 +353,6 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
