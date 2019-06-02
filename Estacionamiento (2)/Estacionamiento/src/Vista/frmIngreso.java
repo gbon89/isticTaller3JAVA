@@ -15,6 +15,8 @@ public class frmIngreso extends javax.swing.JFrame {
         jPanel1.disable();
         btnSalida.setBackground(new Color(22, 160, 133  ));
         jLabelPatente.setForeground(new Color(229, 231, 233 ));
+        jPanel3.setBackground(new Color(19, 141, 117  ));
+        jLabel1.setForeground(new Color(229, 231, 233 ));
     }
 
     @SuppressWarnings("unchecked")
@@ -26,6 +28,9 @@ public class frmIngreso extends javax.swing.JFrame {
         btnSalida = new javax.swing.JButton();
         txtPatente = new javax.swing.JTextField();
         jLabelPatente = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -42,7 +47,11 @@ public class frmIngreso extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        btnSalida.setText("Ingreso");
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnSalida.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        btnSalida.setText("In");
+        btnSalida.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnSalida.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnSalidaMouseEntered(evt);
@@ -56,15 +65,19 @@ public class frmIngreso extends javax.swing.JFrame {
                 btnSalidaActionPerformed(evt);
             }
         });
+        jPanel2.add(btnSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 250, 30));
 
-        txtPatente.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        txtPatente.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         txtPatente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtPatenteActionPerformed(evt);
             }
         });
+        jPanel2.add(txtPatente, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 253, 20));
 
-        jLabelPatente.setText("Ingreso en nùmero de patente");
+        jLabelPatente.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabelPatente.setText("     Ingrese el número de patente");
+        jLabelPatente.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jLabelPatente.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jLabelPatenteMouseEntered(evt);
@@ -73,42 +86,33 @@ public class frmIngreso extends javax.swing.JFrame {
                 jLabelPatenteMouseExited(evt);
             }
         });
+        jPanel2.add(jLabelPatente, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 250, 40));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 33, Short.MAX_VALUE)
-                .addComponent(txtPatente, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 24, 24))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(94, Short.MAX_VALUE)
-                .addComponent(jLabelPatente, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(63, 63, 63))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(44, 44, 44)
-                .addComponent(btnSalida, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabelPatente)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtPatente, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(48, 48, 48)
-                .addComponent(btnSalida, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(55, Short.MAX_VALUE))
-        );
+        jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        jLabel1.setText("Ingreso de automóviles");
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel1MouseExited(evt);
+            }
+        });
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 280, -1));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Axion-Logo-web-250x100.png"))); // NOI18N
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 250, 100));
 
         getContentPane().add(jPanel2);
-        jPanel2.setBounds(230, 0, 310, 271);
+        jPanel2.setBounds(240, 0, 310, 271);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/istic.jpg"))); // NOI18N
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(-5, 0, 260, 270);
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/auto.png"))); // NOI18N
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 240, 270));
+
+        getContentPane().add(jPanel3);
+        jPanel3.setBounds(0, 0, 240, 270);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -141,13 +145,23 @@ public class frmIngreso extends javax.swing.JFrame {
 
     private void jLabelPatenteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelPatenteMouseEntered
         // TODO add your handling code here:
-        jLabelPatente.setForeground(new Color(133, 146, 158   ));
+        
     }//GEN-LAST:event_jLabelPatenteMouseEntered
 
     private void jLabelPatenteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelPatenteMouseExited
         // TODO add your handling code here:
-        jLabelPatente.setForeground(new Color(229, 231, 233 ));
+       
     }//GEN-LAST:event_jLabelPatenteMouseExited
+
+    private void jLabel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseEntered
+        // TODO add your handling code here:
+        jLabel1.setForeground(new Color(166, 172, 175));
+    }//GEN-LAST:event_jLabel1MouseEntered
+
+    private void jLabel1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseExited
+        // TODO add your handling code here:
+      jLabel1.setForeground(new Color(229, 231, 233 ));  
+    }//GEN-LAST:event_jLabel1MouseExited
 
     /**
      * @param args the command line arguments
@@ -186,10 +200,13 @@ public class frmIngreso extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSalida;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabelPatente;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JTextField txtPatente;
     // End of variables declaration//GEN-END:variables
 }

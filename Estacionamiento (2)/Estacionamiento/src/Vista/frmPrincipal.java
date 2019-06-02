@@ -20,6 +20,10 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnReporte.setBackground(new Color(22, 160, 133  ));
         jPanel1.setBackground(new Color(19, 141, 117  ));
         jMenuBar1.setBackground(new Color(19, 141, 117  ));
+        jLabel2.setForeground(new Color(247, 249, 249));
+        jPanel2.setBackground(new Color(19, 141, 117  ));
+        jLabel3.setForeground(new Color(247, 249, 249));
+        
     }
 
     /**
@@ -31,13 +35,16 @@ public class frmPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
         btnReporte = new javax.swing.JButton();
         btnIngreso = new javax.swing.JButton();
         btnNose = new javax.swing.JButton();
         btnSalida = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         btnMenu = new javax.swing.JMenu();
         btnmenuIngresar = new javax.swing.JMenuItem();
@@ -48,21 +55,37 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnmenuFacturados = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(null);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("          estación de servivio");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(10, 170, 200, 31);
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/auto.png"))); // NOI18N
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 210, 290));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 210, 290));
 
         jPanel1.setBackground(new java.awt.Color(51, 102, 0));
         jPanel1.setForeground(new java.awt.Color(0, 102, 0));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel2.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("          Estación de Servicio");
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel2MouseExited(evt);
+            }
+        });
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 240, 31));
 
         btnReporte.setBackground(new java.awt.Color(51, 153, 0));
-        btnReporte.setFont(new java.awt.Font("Century Gothic", 1, 10)); // NOI18N
+        btnReporte.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         btnReporte.setForeground(new java.awt.Color(255, 255, 255));
         btnReporte.setText("Reporte");
+        btnReporte.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnReporte.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnReporteMouseEntered(evt);
@@ -76,12 +99,13 @@ public class frmPrincipal extends javax.swing.JFrame {
                 btnReporteActionPerformed(evt);
             }
         });
-        jPanel1.add(btnReporte);
+        jPanel1.add(btnReporte, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 230, 30));
 
         btnIngreso.setBackground(new java.awt.Color(51, 153, 0));
         btnIngreso.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         btnIngreso.setForeground(new java.awt.Color(255, 255, 255));
         btnIngreso.setText("IN");
+        btnIngreso.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnIngreso.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnIngreso.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -96,12 +120,13 @@ public class frmPrincipal extends javax.swing.JFrame {
                 btnIngresoActionPerformed(evt);
             }
         });
-        jPanel1.add(btnIngreso);
+        jPanel1.add(btnIngreso, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 230, 30));
 
         btnNose.setBackground(new java.awt.Color(51, 153, 0));
         btnNose.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         btnNose.setForeground(new java.awt.Color(255, 255, 255));
         btnNose.setText("Nose");
+        btnNose.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnNose.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnNoseMouseEntered(evt);
@@ -115,15 +140,17 @@ public class frmPrincipal extends javax.swing.JFrame {
                 btnNoseActionPerformed(evt);
             }
         });
-        jPanel1.add(btnNose);
+        jPanel1.add(btnNose, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 230, 30));
 
         btnSalida.setBackground(new java.awt.Color(51, 153, 0));
         btnSalida.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         btnSalida.setForeground(new java.awt.Color(255, 255, 255));
         btnSalida.setText("Out");
-        btnSalida.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+        btnSalida.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnSalida.setBorderPainted(false);
         btnSalida.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSalida.setMaximumSize(new java.awt.Dimension(35, 21));
+        btnSalida.setMinimumSize(new java.awt.Dimension(35, 21));
         btnSalida.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnSalidaMouseEntered(evt);
@@ -137,14 +164,17 @@ public class frmPrincipal extends javax.swing.JFrame {
                 btnSalidaActionPerformed(evt);
             }
         });
-        jPanel1.add(btnSalida);
+        jPanel1.add(btnSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 230, 30));
 
-        getContentPane().add(jPanel1);
-        jPanel1.setBounds(230, 0, 300, 230);
+        jLabel3.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel3.setText("   Elija una opciòn");
+        jLabel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 140, 20));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/istic.jpg"))); // NOI18N
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(0, 0, 225, 225);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Axion-Logo-web-250x100.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 190, 250, 100));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 250, 290));
 
         jMenuBar1.setBorder(new javax.swing.border.MatteBorder(null));
         jMenuBar1.setForeground(new java.awt.Color(255, 51, 51));
@@ -303,6 +333,16 @@ public class frmPrincipal extends javax.swing.JFrame {
          btnSalida.setBackground(new Color(22, 160, 133  ));
     }//GEN-LAST:event_btnSalidaMouseExited
 
+    private void jLabel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseEntered
+        // TODO add your handling code here:
+        jLabel2.setForeground(new Color(166, 172, 175));
+    }//GEN-LAST:event_jLabel2MouseEntered
+
+    private void jLabel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseExited
+        // TODO add your handling code here:
+        jLabel2.setForeground(new Color(247, 249, 249));
+    }//GEN-LAST:event_jLabel2MouseExited
+
     /**
      * @param args the command line arguments
      */
@@ -350,9 +390,12 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem btnmenuFacturados;
     private javax.swing.JMenuItem btnmenuIngresar;
     private javax.swing.JMenuItem btnmenuSacar;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
