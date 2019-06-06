@@ -118,7 +118,7 @@ public class frmIngreso extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSalidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalidaActionPerformed
-        frmSalida objSalida = null;
+
         Auto autoEntrante = new Auto(this.txtPatente.getText());
         try {
             //System.out.println(this.txtPatente.getText());
@@ -126,7 +126,7 @@ public class frmIngreso extends javax.swing.JFrame {
         } catch (IOException ex) {
             Logger.getLogger(frmIngreso.class.getName()).log(Level.SEVERE, null, ex);
         }
-        objSalida.setDefaultCloseOperation(DISPOSE_ON_CLOSE); 
+        this.setDefaultCloseOperation(DISPOSE_ON_CLOSE); 
     }//GEN-LAST:event_btnSalidaActionPerformed
 
     private void btnSalidaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalidaMouseEntered

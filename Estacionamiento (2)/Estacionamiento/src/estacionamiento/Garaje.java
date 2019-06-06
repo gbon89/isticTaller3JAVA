@@ -23,7 +23,7 @@ public class Garaje
         Escritor.println(unAuto.Patente + "=>" + new Date());
         Archivo.close();
         
-        System.out.println(unAuto.Patente);
+        System.out.println(unAuto.Patente + "Estoy en ingresar auto");
     }
     public static ArrayList retornarListado() throws FileNotFoundException, IOException
     {
@@ -31,13 +31,85 @@ public class Garaje
         File Archivo = new File("Estacionados.txt");
         FileReader Lector = new FileReader(Archivo);
         BufferedReader BF = new BufferedReader(Lector);
-        
+        String[] arrayDeDatos; 
         String Renglon;
         while ((Renglon = BF.readLine()) != null)
         {
             //System.out.println(Renglon);
-            arrayRetorno.add(Renglon);
+            arrayDeDatos = Renglon.split("=>");
+            arrayRetorno.add(arrayDeDatos[0]);
         }
         return arrayRetorno;
+    }
+    public static boolean autoExiste(Auto Autito) throws FileNotFoundException, IOException
+    {
+       
+        File Archivo = new File("Estacionados.txt");
+        FileReader Lector = new FileReader(Archivo);
+        BufferedReader BF = new BufferedReader(Lector);
+        String[] arrayDeDatos; 
+        String Renglon;
+        
+       
+        while ((Renglon = BF.readLine()) != null)
+        {
+            //System.out.println(Renglon);
+            arrayDeDatos = Renglon.split("=>");
+          /*  System.out.println(arrayDeDatos[0].length());
+            System.out.println(Autito.Patente.length());*/
+            if(  Autito.Patente.equalsIgnoreCase(arrayDeDatos[0]) ){
+                return true;
+            }
+        }
+        return false;
+    }
+    public static void SacarAuto(Auto Autito) throws IOException{
+        if(Garaje.autoExiste(Autito))
+        {
+             
+                ArrayList arrayRetorno = new ArrayList();
+          
+                File Archivo = new File("Estacionados.txt");
+                FileReader Lector = new FileReader(Archivo);
+                BufferedReader BF = new BufferedReader(Lector);
+                String[] arrayDeDatos; 
+                String Renglon;
+                while ((Renglon = BF.readLine()) != null)
+                {
+                    //System.out.println(Renglon);
+                    arrayDeDatos = Renglon.split("=>");
+                  /*  System.out.println(arrayDeDatos[0].length());
+                    System.out.println(Autito.Patente.length());*/
+                    if(  Autito.Patente.equalsIgnoreCase(arrayDeDatos[0]) && Renglon.equalsIgnoreCase("")){
+                        
+                        
+                    }else
+                    {
+                         arrayRetorno.add(Renglon);
+                    }
+                }
+                 Lector.close();
+                 
+                   /// arrayRetorno tiene los estacionados
+                 
+            FileWriter Archivo1;
+            Archivo1 = new FileWriter("Estacionados.txt", false);
+
+            PrintWriter Escritor;
+            Escritor = new PrintWriter(Archivo1);
+            int i;
+           for(i=0;i<arrayRetorno.size();i++)
+           {
+                 Escritor.println(arrayRetorno.get(i));
+           }
+            
+            
+          
+            Archivo1.close();
+                 
+              
+            
+        }
+        
     }
 }

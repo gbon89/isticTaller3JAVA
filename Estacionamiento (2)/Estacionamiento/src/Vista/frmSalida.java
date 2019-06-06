@@ -1,5 +1,6 @@
 package Vista;
 
+import estacionamiento.Auto;
 import estacionamiento.Garaje;
 import java.awt.Color;
 import java.io.IOException;
@@ -139,6 +140,15 @@ public class frmSalida extends javax.swing.JFrame {
 
     private void btnSalidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalidaActionPerformed
      String patenteIngresada = this.txtPatente.getText();
+       Auto autito = new Auto(patenteIngresada);
+        try {
+            if(Garaje.autoExiste(autito)){
+                System.out.println("Existe");
+            } else{
+                System.out.println("No existe");
+            }} catch (IOException ex) {
+            Logger.getLogger(frmSalida.class.getName()).log(Level.SEVERE, null, ex);
+        }
         System.out.println(patenteIngresada);
         ArrayList patenteYfecha = null;
         try {
@@ -152,7 +162,11 @@ public class frmSalida extends javax.swing.JFrame {
             DATOS = unaPatente.toString().split("May",2);
            // System.out.println(DATOS[]);  
         }
-        
+        try {
+            Garaje.SacarAuto(autito);
+        } catch (IOException ex) {
+            Logger.getLogger(frmSalida.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
     }//GEN-LAST:event_btnSalidaActionPerformed
 
