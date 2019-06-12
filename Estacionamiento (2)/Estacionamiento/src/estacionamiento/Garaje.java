@@ -7,6 +7,9 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -19,8 +22,8 @@ public class Garaje
         
         PrintWriter Escritor;
         Escritor = new PrintWriter(Archivo);
- 
-        Escritor.println(unAuto.Patente + "=>" + new Date());
+        Escritor.println(unAuto.Patente + "=>" +  LocalTime.now().toString() + "=>" +  LocalDate.now().toString()          );
+       // Escritor.println(unAuto.Patente + "=>" + new Date());
         Archivo.close();
         
         System.out.println(unAuto.Patente + "Estoy en ingresar auto");
@@ -36,8 +39,29 @@ public class Garaje
         while ((Renglon = BF.readLine()) != null)
         {
             //System.out.println(Renglon);
+            /*
             arrayDeDatos = Renglon.split("=>");
             arrayRetorno.add(arrayDeDatos[0]);
+            */
+            arrayRetorno.add(Renglon);
+        }
+        return arrayRetorno;
+    }
+      public static ArrayList retornarListadoSoloPatentes() throws FileNotFoundException, IOException
+    {
+        ArrayList arrayRetorno = new ArrayList();
+        File Archivo = new File("Estacionados.txt");
+        FileReader Lector = new FileReader(Archivo);
+        BufferedReader BF = new BufferedReader(Lector);
+        String[] arrayDeDatos; 
+        String Renglon;
+        while ((Renglon = BF.readLine()) != null)
+        {
+            //System.out.println(Renglon);
+            arrayDeDatos = Renglon.split("=>");
+            arrayRetorno.add(arrayDeDatos[0]);
+            
+           
         }
         return arrayRetorno;
     }
@@ -63,12 +87,22 @@ public class Garaje
         }
         return false;
     }
-    public static void SacarAuto(Auto Autito) throws IOException{
-        if(Garaje.autoExiste(Autito))
+    ///
+    
+    /*
+    ***
+    
+    
+    
+    */public static void SacarAuto(Auto Autito) throws IOException{
+        
+        
+        boolean esta=Garaje.autoExiste(Autito);
+        System.out.println("esta :"+esta);
+        if(esta)
         {
              
                 ArrayList arrayRetorno = new ArrayList();
-          
                 File Archivo = new File("Estacionados.txt");
                 FileReader Lector = new FileReader(Archivo);
                 BufferedReader BF = new BufferedReader(Lector);
@@ -80,9 +114,11 @@ public class Garaje
                     arrayDeDatos = Renglon.split("=>");
                   /*  System.out.println(arrayDeDatos[0].length());
                     System.out.println(Autito.Patente.length());*/
-                    if(  Autito.Patente.equalsIgnoreCase(arrayDeDatos[0]) && Renglon.equalsIgnoreCase("")){
+                    if( Autito.Patente.equalsIgnoreCase(arrayDeDatos[0]) ){
+                        //
                         
                         
+                            
                     }else
                     {
                          arrayRetorno.add(Renglon);

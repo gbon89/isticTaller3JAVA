@@ -3,8 +3,15 @@ package Vista;
 import estacionamiento.Auto;
 import estacionamiento.Garaje;
 import java.awt.Color;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
@@ -24,7 +31,7 @@ public class frmSalida extends javax.swing.JFrame {
         jPanel4.setBackground(new Color(19, 141, 117  ));
         jLabel2.setForeground(new Color(247, 249, 249));
         jLabel3.setForeground(new Color(247, 249, 249));
-        ArrayList Patentes = Garaje.retornarListado();
+        ArrayList Patentes = Garaje.retornarListadoSoloPatentes();
         //Garaje.retornarListado();
         
         DefaultListModel Modelo;
@@ -139,34 +146,106 @@ public class frmSalida extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSalidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalidaActionPerformed
-     String patenteIngresada = this.txtPatente.getText();
-       Auto autito = new Auto(patenteIngresada);
-        try {
-            if(Garaje.autoExiste(autito)){
-                System.out.println("Existe");
-            } else{
-                System.out.println("No existe");
-            }} catch (IOException ex) {
-            Logger.getLogger(frmSalida.class.getName()).log(Level.SEVERE, null, ex);
+     
+        /**** principio verificar auto   */
+                                boolean existeAuto = false;
+                                String patenteIngresada = this.txtPatente.getText();
+                               Auto autito = new Auto(patenteIngresada);
+                                try {
+                                    existeAuto = Garaje.autoExiste(autito);
+                                    /*
+                                    if(existeAuto){
+                                        System.out.println("Existe");
+                                    } else{
+                                        System.out.println("No existe");
+                                    }
+                                    */
+                                    // cambiar por ventana hemergente o similar
+                                } catch (IOException ex) {
+                                    Logger.getLogger(frmSalida.class.getName()).log(Level.SEVERE, null, ex);
+                                }
+
+         /**** fin de veificar auto 
+          si existe auto la variable "existeAuto" va a ser true         
+          */
+         
+         if (existeAuto) 
+         {
+              System.out.println(patenteIngresada);
+              ArrayList patenteYfecha = null;
+            try {
+                patenteYfecha = Garaje.retornarListado();
+            } catch (IOException ex) {
+                Logger.getLogger(frmSalida.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            for(Object unaPatente:patenteYfecha)
+            {
+                  String[] DATOS ; 
+                  DATOS = unaPatente.toString().split("=>");/// devuelve un array 
+                  
+                  /*
+                  System.out.println("solo patente: "+DATOS[0]);  
+                  System.out.println("solo hora: "+DATOS[1]);  
+                  System.out.println("solo fecha: "+DATOS[2]);  
+                  */
+                  
+                  
+                /*** si el la misma patente , calculo el costo */
+                if(autito.Patente.equals(DATOS[0]) )
+                {
+                        LocalTime horaActual = LocalTime.now();
+                        LocalTime HoraEstacionado= LocalTime.parse(DATOS[1]);
+
+                        System.out.println("solo horaActual: "+horaActual);  
+                        System.out.println("solo HoraEstacionado: "+HoraEstacionado);  
+                        
+                        int resultado= horaActual.getHour()-HoraEstacionado.getHour();
+
+                        System.out.println("cantidad de horas: "+resultado ); 
+
+                        float importe= resultado*70;
+                        System.out.println("importe: "+importe ); 
+                        
+                        
+                       FileWriter Archivo = null;
+                      try {
+                          Archivo = new FileWriter("Facturados.txt", true);
+                      } catch (IOException ex) {
+                          Logger.getLogger(frmSalida.class.getName()).log(Level.SEVERE, null, ex);
+                      }
+
+                       PrintWriter Escritor;
+                       Escritor = new PrintWriter(Archivo);
+                       Escritor.println(DATOS[0] + "=>" + DATOS[1] + "=>" + DATOS[2]+ "=>" + importe + "=>" + horaActual      );
+                      try {
+                          // Escritor.println(unAuto.Patente + "=>" + new Date());
+                          Archivo.close();
+                      } catch (IOException ex) {
+                          Logger.getLogger(frmSalida.class.getName()).log(Level.SEVERE, null, ex);
+                      }
+
+                       System.out.println(DATOS[0] + "Estoy en facturado ");
+                        
+                    
+                }
+                       // System.out.println(unaPatente);
+                      
+
+                        
+             /* fin    si el la misma patente , calculo el costo               *///
+            }
+            try {
+                
+                //busca el auto lo elimina del array, guardando el array nuevamente en el archivo
+              Garaje.SacarAuto(autito);
+                System.out.println("sacar");
+            } catch (IOException ex) {
+                Logger.getLogger(frmSalida.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
-        System.out.println(patenteIngresada);
-        ArrayList patenteYfecha = null;
-        try {
-            patenteYfecha = Garaje.retornarListado();
-        } catch (IOException ex) {
-            Logger.getLogger(frmSalida.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        for(Object unaPatente:patenteYfecha)
-        {
-            String[] DATOS ; 
-            DATOS = unaPatente.toString().split("May",2);
-           // System.out.println(DATOS[]);  
-        }
-        try {
-            Garaje.SacarAuto(autito);
-        } catch (IOException ex) {
-            Logger.getLogger(frmSalida.class.getName()).log(Level.SEVERE, null, ex);
-        }
+         
+         
+      
         
     }//GEN-LAST:event_btnSalidaActionPerformed
 
