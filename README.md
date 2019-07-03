@@ -1,6 +1,7 @@
 # isticTaller3JAVA
  
-<h1> Repositorio de trabajos en clase </h1>
+Repositorio de trabajos en clase
+
 # cada clase una carpeta
 Esta pantala es el inicio de la app Estación de Servicio.
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/principal.png)
