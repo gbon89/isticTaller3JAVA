@@ -2,12 +2,12 @@
  
 Repositorio de trabajos en clase
 <!DOCTYPE html>
-<html lang="es">
+
     <head>
         
     </head>
     <body>
-       # cada clase una carpeta
+       
        
  <h1> Repositorio de tranajos en clase</h1>
 <h1>Esta pantala es el inicio de la app Estación de Servicio.</h1>
