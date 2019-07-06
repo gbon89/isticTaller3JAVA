@@ -8,24 +8,24 @@
 <body>      
 <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estación de Servicio</h1>
  
- <h1>Esta pantala es el inicio de la app Estación de Servicio.</h1>
+ <h2>Esta pantala es el inicio de la app Estación de Servicio.</h2>
 
    
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/principal.png)
 
-<h1>Pantalla de patentes que ingresan.</h1>
+<h2>Pantalla de patentes que ingresan.</h2>
 
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/entrada.png)
 
-<h1>Pantalla de vehículos que se retiran.</h1>
+<h2>Pantalla de vehículos que se retiran.</h2>
 
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/Salida.png)
 
-<h1>Pantalla de vehiculos que aún se encuentran estacionados.</h1>
+<h2>Pantalla de vehiculos que aún se encuentran estacionados.</h2>
 
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/estacionados.png)
 
-<h1>Pantalla de vehículos facturados.</h1>
+<h2>Pantalla de vehículos facturados.</h2>
 
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/facturado.png)
 
