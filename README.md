@@ -54,11 +54,11 @@ La misma se vuelve a introducir en otro archivo llamado "facturados.txt".
 
 <h2>Pantalla de vehículos facturados</h2>
 
-```````````````
+````````````
  Se muestra un cuadro con toda la información relativa a los vehículos que se retirarón y ya fuerón facturados , 
  tales como patente que egreso, monto que se abono, el monto total facturado hasta el momento, 
  fecha y hora de ingreso, y de egreso.
- ```````````````
+ ````````````
  
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/facturado.png)
 
