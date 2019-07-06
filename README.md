@@ -6,7 +6,7 @@ Repositorio de trabajos en clase
   <head>
  </head>
 <body>      
-<h1 style="color:red"> Repositorio de tranajos en clase</h1>
+<h1 style="color:red"> Repositorio de tranajos en clase<span style="color:blue">blue</span></h1>
 <h1>Esta pantala es el inicio de la app Estación de Servicio.</h1>
    
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/principal.png)
