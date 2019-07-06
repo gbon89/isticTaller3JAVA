@@ -3,13 +3,19 @@
 <html>
  </head>          
 <body>      
-<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estación de Servicio</h1>
+#Estación de Servicio
+ 
+ * Descripción:
+  Está App es capaz de capturar los ingresos de vehículos en un garage, usted podrá 
+  controlar la estadía de cada automóvil hasta su egreso y determinar cual es el 
+  total a pagar por guardar su auto en la estación y los totales de todos los clientes en 
+  el instante, en otras palabras una vez que egreso un vehículo usted tendrá los totales calculado automáticamente.*
  
  <h2>Esta pantala es el inicio de la app Estación de Servicio</h2>
  
  ```````````````
- *La pantalla principal lo que nos ofrece es la posibilidad de accedera 
- a las diferentes opciones de las aplicación a través de los botones o por el listado opciones*
+ La pantalla principal lo que nos ofrece es la posibilidad de accedera 
+ a las diferentes opciones de las aplicación a través de los botones o por el listado opciones
   ``````````````` 
   
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/principal.png)
