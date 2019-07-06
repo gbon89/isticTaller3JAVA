@@ -17,8 +17,7 @@
  ```````````````
  La pantalla principal lo que nos ofrece es la posibilidad de accedera 
  a las diferentes opciones de las aplicación a través de los botones o por el listado opciones
-  ``````````````` 
-###icono-arg-alarma 
+  ```````````````
 
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/principal.png)
 
