@@ -5,7 +5,7 @@ Repositorio de trabajos en clase
 <html>
   <head>
  </head>
-  <body style="background-color=red">      
+<body style="background-color=red;">      
 <h1> Repositorio de tranajos en clase</h1>
 <h1>Esta pantala es el inicio de la app Estación de Servicio.</h1>
    
@@ -27,7 +27,7 @@ Repositorio de trabajos en clase
 
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/facturado.png)
 
-   </body>
+</body>
 </html>
 
 
