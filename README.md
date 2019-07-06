@@ -2,7 +2,7 @@
  <!DOCTYPE html>
 <html>
  <head>
-   <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+  
 
  </head>
 <body>      
@@ -12,7 +12,7 @@
    
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/principal.png)
 
-<h1 style="font-family:verdana;">Pantalla de patentes que ingresan.</h1>
+<h1>Pantalla de patentes que ingresan.</h1>
 
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/entrada.png)
 
