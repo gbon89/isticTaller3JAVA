@@ -9,10 +9,14 @@ Repositorio de trabajos en clase
  </head>
 <body>      
 <h1> Repositorio de trabajos en clase </h1>
-<h1>Esta pantala es el inicio de la app Estación de Servicio.</h1>
+ 
  <div class="alert alert-primary" role="alert">
-  This is a primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-</div>  
+  This is a primary alert with  Give it a click if you like.
+</div> 
+ 
+ 
+<h1>Esta pantala es el inicio de la app Estación de Servicio.</h1>
+
    
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/principal.png)
 
