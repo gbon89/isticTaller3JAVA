@@ -22,8 +22,8 @@ Se guarda la patente en un archivo de texto para futuras operaciones con el tipo
 
 <h2>Pantalla de vehículos que se retiran.</h2>
 ```
-<p>En la pantalla de los vehículos que se retiran de la estación lo que se hace es seleccionar la patente
-por pantalla y se muestra el valor a pagar por parte del cliente. En caso de retirar el coche se busca la patenta y el tiempo que estuvo estacionado(en el archico de texto de vehículos estacionados) y se retira la patenta. La misma se vuelve a introducir en otro archivo llamado "facturados.txt".</p>
+En la pantalla de los vehículos que se retiran de la estación lo que se hace es seleccionar la patente
+por pantalla y se muestra el valor a pagar por parte del cliente. En caso de retirar el coche se busca la patenta y el tiempo que estuvo estacionado(en el archico de texto de vehículos estacionados) y se retira la patenta. La misma se vuelve a introducir en otro archivo llamado "facturados.txt".
 ```
 
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/Salida.png)
