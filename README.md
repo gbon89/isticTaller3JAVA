@@ -8,7 +8,7 @@ Repositorio de trabajos en clase
 
  </head>
 <body>      
-<h1 style="font-family:Playfair Display, serif;"> Repositorio de trabajos en clase </h1>
+<h1 style="font-family:'Playfair Display', serif;"> Repositorio de trabajos en clase </h1>
 <h1>Esta pantala es el inicio de la app Estación de Servicio.</h1>
 
    
