@@ -2,7 +2,9 @@
  <!DOCTYPE html>
 <html>
  <head>
-  
+  <style type="txt/css">
+    h1{color:red;}
+  </style>
 
  </head>
 <body>      
