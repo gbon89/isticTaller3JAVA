@@ -21,10 +21,11 @@ Se guarda la patente en un archivo de texto para futuras operaciones con el tipo
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/entrada.png)
 
 <h2>Pantalla de vehículos que se retiran.</h2>
-```
+
+````````````````````````
 En la pantalla de los vehículos que se retiran de la estación lo que se hace es seleccionar la patente
 por pantalla y se muestra el valor a pagar por parte del cliente. En caso de retirar el coche se busca la patenta y el tiempo que estuvo estacionado(en el archico de texto de vehículos estacionados) y se retira la patenta. La misma se vuelve a introducir en otro archivo llamado "facturados.txt".
-```
+````````````````````````
 
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/Salida.png)
 
@@ -36,11 +37,12 @@ por pantalla y se muestra el valor a pagar por parte del cliente. En caso de ret
 
 <h2>Pantalla de vehículos facturados.</h2>
 
-<p>í se muestra un cuadro con toda la información relativa a los vehículos que se retirarón y ya fuerón facturados , 
+<p>Sse muestra un cuadro con toda la información relativa a los vehículos que se retirarón y ya fuerón facturados , 
  tales como patente que egreso, monto que se abono, el monto total facturado hasta el momento, 
  fecha y hora de ingreso, y de egreso.</p>
  
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/facturado.png)
+
 
 </body>
 </html>
