@@ -4,10 +4,15 @@ Repositorio de trabajos en clase
 <!DOCTYPE html>
 <html>
   <head>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-                 ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
  </head>
 <body>      
-<h1 style="color:red"> Repositorio de trabajos en clase <span style="color:blue">blue</span> </h1>
+<h1> Repositorio de trabajos en clase </h1>
 <h1>Esta pantala es el inicio de la app Estación de Servicio.</h1>
+ <div class="alert alert-primary" role="alert">
+  This is a primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+</div>  
    
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/principal.png)
 
