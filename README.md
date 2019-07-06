@@ -6,7 +6,6 @@
  <h1>Estación de Servicio</h1>
  
   Descripción:
-  icono-arg-alarma
  -*Está App es capaz de capturar los ingresos de vehículos en un garage, usted podrá 
   controlar la estadía de cada automóvil hasta su egreso y determinar cual es el 
   total a pagar por guardar su auto en la estación y los totales de todos los clientes en 
