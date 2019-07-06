@@ -4,17 +4,11 @@ Repositorio de trabajos en clase
 <!DOCTYPE html>
 <html>
   <head>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-                 ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 
  </head>
 <body>      
-<h1> Repositorio de trabajos en clase </h1>
- 
- <div class="alert alert-primary" role="alert">
-  This is a primary alert with  Give it a click if you like.
-</div> 
- 
- 
+<h1 style="font-family:Playfair Display, serif;"> Repositorio de trabajos en clase </h1>
 <h1>Esta pantala es el inicio de la app Estación de Servicio.</h1>
 
    
