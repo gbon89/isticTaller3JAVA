@@ -14,7 +14,7 @@ Repositorio de trabajos en clase
    
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/principal.png)
 
-<h1>Pantalla de patentes que ingresan.</h1>
+<h1 style="font-family:'Playfair Display', serif;">Pantalla de patentes que ingresan.</h1>
 
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/entrada.png)
 
