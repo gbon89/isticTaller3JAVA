@@ -5,7 +5,7 @@ Repositorio de trabajos en clase
 <html>
   <head>
  </head>
-  <body color="red">      
+  <body background-color="red">      
 <h1> Repositorio de tranajos en clase</h1>
 <h1>Esta pantala es el inicio de la app Estación de Servicio.</h1>
    
