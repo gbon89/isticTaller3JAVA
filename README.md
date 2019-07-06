@@ -14,6 +14,10 @@
 
 <h2>Pantalla de patentes que ingresan.</h2>
 
+                                                 ```
+                                                 until finished
+                                                 ```
+
 <p>En esta pantalla se operan con las patentes de los autos que ingresan a la estación,
 Se guarda la patente en un archivo de texto para futuras operaciones con el tipo de dato de la patente.
 </p>
