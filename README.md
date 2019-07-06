@@ -6,8 +6,9 @@
 
  </head>
 <body>      
-<h1> Repositorio de trabajos en clase </h1>
-<h1>Esta pantala es el inicio de la app Estación de Servicio.</h1>
+                             <h1>Estación de Servicio</h1>
+ 
+              <h1>Esta pantala es el inicio de la app Estación de Servicio.</h1>
 
    
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/principal.png)
