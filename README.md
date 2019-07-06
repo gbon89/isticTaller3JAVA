@@ -5,11 +5,11 @@
 <body>      
 #Estación de Servicio
  
- * Descripción:
-  Está App es capaz de capturar los ingresos de vehículos en un garage, usted podrá 
+  Descripción:
+ - Está App es capaz de capturar los ingresos de vehículos en un garage, usted podrá 
   controlar la estadía de cada automóvil hasta su egreso y determinar cual es el 
   total a pagar por guardar su auto en la estación y los totales de todos los clientes en 
-  el instante, en otras palabras una vez que egreso un vehículo usted tendrá los totales calculado automáticamente.*
+  el instante, en otras palabras una vez que egreso un vehículo usted tendrá los totales calculado automáticamente. -
  
  <h2>Esta pantala es el inicio de la app Estación de Servicio</h2>
  
