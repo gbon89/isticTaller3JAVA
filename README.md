@@ -1,20 +1,18 @@
 # isticTaller3JAVA
- 
-Repositorio de trabajos en clase
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
-  <head>
+ <head>
    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 
  </head>
 <body>      
-<h1 style="font-family:'Playfair Display', serif;"> Repositorio de trabajos en clase </h1>
+<h1> Repositorio de trabajos en clase </h1>
 <h1>Esta pantala es el inicio de la app Estación de Servicio.</h1>
 
    
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/principal.png)
 
-<h1 style="font-family:'Playfair Display', serif;">Pantalla de patentes que ingresan.</h1>
+<h1 style="font-family:verdana;">Pantalla de patentes que ingresan.</h1>
 
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/entrada.png)
 
