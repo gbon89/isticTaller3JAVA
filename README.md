@@ -13,7 +13,7 @@
    
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/principal.png)
 
-<h2>Pantalla de patentes que ingresan.</h2>
+<h2 style="color:blue;">Pantalla de patentes que ingresan.</h2>
 
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/entrada.png)
 
