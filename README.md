@@ -8,8 +8,8 @@
  <h2>Esta pantala es el inicio de la app Estación de Servicio</h2>
  
  ```````````````
- La pantalla principal lo que nos ofrece es la posibilidad de accedera 
- a las diferentes opciones de las aplicación a través de los botones o por el listado opciones
+ *La pantalla principal lo que nos ofrece es la posibilidad de accedera 
+ a las diferentes opciones de las aplicación a través de los botones o por el listado opciones*
   ``````````````` 
   
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/principal.png)
