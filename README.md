@@ -14,12 +14,6 @@
 
 <h2>Pantalla de patentes que ingresan.</h2>
 
-```
-Give the example
-```
-
-                                           
-
 <p>En esta pantalla se operan con las patentes de los autos que ingresan a la estación,
 Se guarda la patente en un archivo de texto para futuras operaciones con el tipo de dato de la patente.
 </p>
@@ -31,6 +25,7 @@ Se guarda la patente en un archivo de texto para futuras operaciones con el tipo
 <p>En la pantalla de los vehículos que se retiran de la estación lo que se hace es seleccionar la patente
 por pantalla y se muestra el valor a pagar por parte del cliente. En caso de retirar el coche se busca la patenta y el tiempo que estuvo estacionado(en el archico de texto de vehículos estacionados) y se retira la patenta. La misma se vuelve a introducir en otro archivo llamado "facturados.txt".</p>
 ```
+
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/Salida.png)
 
 <h2>Pantalla de vehiculos que aún se encuentran estacionados.</h2>
