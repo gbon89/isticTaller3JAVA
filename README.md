@@ -6,7 +6,7 @@
 
  </head>
 <body>      
-                             <h1>Estación de Servicio</h1>
+ <h1>                             </h1><h1>Estación de Servicio</h1>
  
               <h1>Esta pantala es el inicio de la app Estación de Servicio.</h1>
 
