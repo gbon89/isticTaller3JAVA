@@ -13,6 +13,7 @@
 ![solarized vim](https://github.com/gbon89/isticTaller3JAVA/blob/master/img/principal.png)
 
 <h2>Pantalla de patentes que ingresan.</h2>
+
 until finished
                                            
 
